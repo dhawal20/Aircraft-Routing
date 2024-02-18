@@ -13,3 +13,6 @@ The code is written in a Python notebook. The packages requirements are minimal 
 
 ```bash
 pip install -r requirements.txt
+
+# **Contact**
+For further queries please get in touch at dhawalthakkar.199020@gmail.com
