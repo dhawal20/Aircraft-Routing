@@ -10,8 +10,9 @@ We introduce a novel approach to a particular version of the aircraft routing pr
 # **About Code**
 
 The code is written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. The file "DP_aircraft_routing.ipnyb" contains the implementation of the dynamic programming implementation mentioned in the paper. The file "RL_aircraft_routing.ipnyb" contains the implementation of the Reinforcement Learning framework mentioned in the paper. Folder Data contains all the data set required to test the models. Other files are for data cleaning purposes which can be based on requirements or you may need to write different codes for file cleaning based on the data format of the original file. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
-
+```
 pip install -r requirements.txt
+```
 
 # **Contact**
 For further queries please get in touch at dhawalthakkar.199020@gmail.com
