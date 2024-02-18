@@ -1,8 +1,7 @@
-# Aircraft-Routing
+# **Code for JATRS 2024: Aircraft Routing using Dynamic Programming and Reinforcement Learning: A Customer-Centric Approach**
+This github repository consists of all the codes and data files required for the paper submitted to JATRS 2024 titled "Aircraft Routing using Dynamic Programming and Reinforcement Learning: A Customer-Centric Approach"
 
-# **Aircraft-Routing**
-
-**Abstract**
+# **Abstract**
 
 Over the past few decades, the airline industry has evolved into a sophisticated business, with conventional objectives such as operational efficiency, effective fleet assignment, flight punctuality, and equitable crew scheduling being the primary focus. Nevertheless, given the growing accessibility to customer feedback (either through public forums or private data), it is crucial to make business decisions that cater to the customers' requirements in addition to conventional goals. Within aircraft operations, there is a series of decisions to be made, such as flight scheduling, fleet assignment, aircraft routing, and crew scheduling. After designating a fleet type to each flight leg, airlines ascertain the sequence of flight legs, or strings, to be operated by individual aircraft, while complying with obligatory maintenance checks. This constitutes the aircraft routing problem.
 
@@ -10,7 +9,7 @@ We introduce a novel approach to a particular version of the aircraft routing pr
 
 # **About Code**
 
-The code is written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
+The code is written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. The file "DP_aircraft_routing.ipnyb" contains the implementation of the dynamic programming implementation mentioned in the paper. The file "RL_aircraft_routing.ipnyb" contains the implementation of the Reinforcement Learning framework mentioned in the paper. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
 
 ```bash
 pip install -r requirements.txt
