@@ -1,5 +1,5 @@
 # **Code for JATRS 2024: Aircraft Routing using Dynamic Programming and Reinforcement Learning: A Customer-Centric Approach**
-This github repository consists of all the codes and data files required for the paper submitted to JATRS 2024 titled "Aircraft Routing using Dynamic Programming and Reinforcement Learning: A Customer-Centric Approach"
+This github repository consists of all the codes and data files required for the paper accepted and published in JATRS 2024 titled "Aircraft Routing using Dynamic Programming and Reinforcement Learning: A Customer-Centric Approach". Link to access the paper https://www.sciencedirect.com/science/article/pii/S2941198X24000290
 
 # **Abstract**
 
