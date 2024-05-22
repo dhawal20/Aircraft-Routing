@@ -13,6 +13,7 @@ We introduce a novel approach to aircraft routing problem, by infusing tradition
 All the codes are written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. Psuedo codes for the implementation can be found in the supplementary material of the paper.
 
 **Data Folder**
+
 Data Folder contains the excel files for the input data. In the paper we have primarily talked about Test Case 1, 2, 3, 4 and Indigo_Fleet test cases. Other data files which are a subset of the Indigo_Fleet data file can also be found and used for experiment purposes.
 
 We propose an optimization model that strives to minimize propagated delay while prioritizing flights based on customer feedback, thus resulting in customer-aware routes. To solve the proposed optimization model, we design an iterative alternating optimization scheme where feasible strings are first constructed from the pool of available flight legs using a string generation procedure, followed by solving an integer linear optimization problem over only the feasible set of strings obtained in the first stage. To construct feasible strings of flights at each iteration, we use two different methods. Dynamic Programming (DP) and Reinforcement Learning (RL) approach.
@@ -27,14 +28,28 @@ The file "RL_aircraft_routing.ipnyb" contains the implementation of the RL Frame
 
 **stringEnumerator.ipynb**
 
- "stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). It is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible. Optimization model discussed in Section 4 is implemented to achieve the objective.
+"stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). It is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible. Optimization model discussed in Section 4 is implemented to achieve the objective.
 
  **dataGenerationDelays.ipynb**
+
+The file dataGenerationDelays.ipynb is used to generate delays which is used in the DP approach and the distribution defined for the flight legs belonging to each cluster is then used in RL approach to capture the uncertainties in delay. Detailed discussion on the delay generation scheme can be found in Section 7.2.2 of the paper.
+
+**fileRefiner.ipynb, dataCleaner_IndigoData.ipynb**
+
+These files are used to clean the data from the excel file obtained from the Indigo website to suit our implementation purposes. "fileRefiner.ipynb" particularly removes the flight legs that do not have any connections both incoming and outgoing. "dataCleaner_IndigoData.ipynb" formats the date and time of the original Indigo data file into the format that will be suited for our implementation purposes.
+
+**stringVisualizer.ipynb**
+
+The file "stringVisualizer.ipynb" is used to create Gantt Chart like visualisations of the strings. Especially the ones found in Figures 10 and 11 in the paper. In the file all the strings obtained from Test cases 1, 2, 3 and 4 can be found with and without $\xi$ value assignments. 
  
- Other files are for data cleaning purposes which can be based on requirements or you may need to write different codes for file cleaning based on the data format of the original file. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
+The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
 ```
 pip install -r requirements.txt
 ```
+
+# **Citation**
+
+Citation is yet to be announced and will be soon updated.
 
 # **Contact**
 For further queries please get in touch at dhawalthakkar.199020@gmail.com
