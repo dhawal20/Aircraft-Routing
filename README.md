@@ -10,7 +10,22 @@ We introduce a novel approach to aircraft routing problem, by infusing tradition
 
 # **About Code**
 
-All the codes are written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. The file "DP_aircraft_routing.ipnyb" contains the implementation of the dynamic programming implementation mentioned in the paper. The file "RL_aircraft_routing.ipnyb" contains the implementation of the Reinforcement Learning framework mentioned in the paper. Folder Data contains all the data set required to test the models. "stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). "stringEnumerator.ipynb" is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible. Other files are for data cleaning purposes which can be based on requirements or you may need to write different codes for file cleaning based on the data format of the original file. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
+All the codes are written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. Psuedo codes for the implementation can be found in the supplementary material of the paper; link https://ars.els-cdn.com/content/image/1-s2.0-S2941198X24000290-mmc1.pdf.
+
+**Data Folder**
+Folder Data contains all the data set required to test the models.
+
+**DP_aircraft_routing.ipnyb**
+The file "DP_aircraft_routing.ipnyb" contains the implementation of the dynamic programming implementation mentioned in the paper. 
+
+**RL_aircraft_routing.ipnyb**
+The file "RL_aircraft_routing.ipnyb" contains the implementation of the Reinforcement Learning framework mentioned in the paper.
+
+**stringEnumerator.ipynb**
+ "stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). "stringEnumerator.ipynb" is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible.
+
+ **dataGenerationDelays.ipynb**
+ Other files are for data cleaning purposes which can be based on requirements or you may need to write different codes for file cleaning based on the data format of the original file. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
 ```
 pip install -r requirements.txt
 ```
