@@ -40,7 +40,7 @@ These files are used to clean the data from the excel file obtained from the Ind
 
 **stringVisualizer.ipynb**
 
-The file "stringVisualizer.ipynb" is used to create Gantt Chart like visualisations of the strings. Especially the ones found in Figures 10 and 11 in the paper. In the file all the strings obtained from Test cases 1, 2, 3 and 4 can be found with and without $\xi$ value assignments. 
+The file "stringVisualizer.ipynb" is used to create Gantt Chart like visualisations of the strings. Especially the ones found in Figures 10 and 11 in the paper. In the file all the strings obtained from Test cases 1, 2, 3 and 4 can be found with and without $\xi$ value assignments of the flight legs. 
  
 The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
 ```
@@ -52,4 +52,4 @@ pip install -r requirements.txt
 Citation is yet to be announced and will be soon updated.
 
 # **Contact**
-For further queries please get in touch at dhawalthakkar.199020@gmail.com
+For further queries please get in touch primarily at balamurugan.palaniappan@iitb.ac.in or alternatively at dhawalthakkar.199020@gmail.com
