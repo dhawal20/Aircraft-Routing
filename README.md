@@ -10,25 +10,25 @@ We introduce a novel approach to aircraft routing problem, by infusing tradition
 
 # **About Code**
 
-All the codes are written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. Psuedo codes for the implementation can be found in the supplementary material of the paper.
+All the codes are written in Python notebook files (.ipynb format). The package requirements are minimal and majorly standard packages are only used. Psuedo codes for the implementation can be found in the supplementary material of the paper.
 
 **Data Folder**
 
 Data Folder contains the excel files for the input data. In the paper we have talked about Test Case 1, 2, 3, 4 and Indigo_Fleet test cases which are present in this folder.
 
-We propose an optimization model that strives to minimize propagated delay while prioritizing flights based on customer feedback, thus resulting in customer-aware routes. To solve the proposed optimization model, we design an iterative alternating optimization scheme where feasible strings are first constructed from the pool of available flight legs using a string generation procedure, followed by solving an integer linear optimization problem over only the feasible set of strings obtained in the first stage. To construct feasible strings of flights at each iteration, we use two different methods. Dynamic Programming (DP) and Reinforcement Learning (RL) approach.
+We propose an optimization model that strives to minimize propagated delay while prioritizing flights based on customer feedback, thus resulting in customer-aware routes. To solve the proposed optimization model, we design an iterative alternating optimization scheme where feasible strings are first constructed from the pool of available flight legs using a string generation procedure, followed by solving an integer linear optimization problem over only the feasible set of strings obtained in the first stage. To construct feasible strings of flights at each iteration, we use two different methods: Dynamic Programming (DP) and Reinforcement Learning (RL) approaches.
 
 **DP_aircraft_routing.ipnyb**
 
-The file "DP_aircraft_routing.ipnyb" contains the implementation of the DP approach mentioned in the paper. DP approach is useful for mean delay information. Optimization model discussed in Section 4 of the paper is implemented in this approach using pyomo. Discussion of the DP approach can be found in Section 5 and the pseudocodes can be found in the supplementary material of the paper.
+The file "DP_aircraft_routing.ipnyb" contains the implementation of the DP approach mentioned in the paper. DP approach is useful when mean delay information is available. Optimization model discussed in Section 4 of the paper is implemented in this approach using pyomo. Discussion of the DP approach can be found in Section 5 of the paper and the pseudocodes can be found in the supplementary material of the paper.
 
 **RL_aircraft_routing.ipnyb**
 
-The file "RL_aircraft_routing.ipnyb" contains the implementation of the RL Framework approach mentioned in the paper. The objective of RL framework is to capture the uncertainties in delays the flight legs might face in real life situations. Optimization model discussed in Section 4 of the paper is implemented in this approach using pyomo. Discussion of the RL approach can be found in Section 6 and the pseudocodes can be found in the supplementary material of the paper.
+The file "RL_aircraft_routing.ipnyb" contains the implementation of the RL Framework approach mentioned in the paper. The objective of RL framework is to capture the uncertainties in delays the flight legs might face in real life situations. Optimization model discussed in Section 4 of the paper is implemented in this approach using pyomo. Discussion of the RL approach can be found in Section 6 of the paper and the pseudocodes can be found in the supplementary material of the paper.
 
 **stringEnumerator.ipynb**
 
-"stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). It is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible. Optimization model discussed in Section 4 is implemented to achieve the objective.
+"stringEnumerator.ipynb" enumerates all possible flight sequence strings, which are then used for selection based on the objective (minimization of propagated delays with the option of incorporating importance assignments as well). It is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not computationally feasible. Optimization model discussed in Section 4 is implemented to achieve the objective.
 
  **dataGenerationDelays.ipynb**
 
@@ -36,11 +36,11 @@ The file dataGenerationDelays.ipynb is used to generate delays which is used in 
 
 **fileRefiner.ipynb, dataCleaner_IndigoData.ipynb**
 
-These files are used to clean the data from the excel file obtained from the Indigo website to suit our implementation purposes. "fileRefiner.ipynb" particularly removes the flight legs that do not have any connections both incoming and outgoing. "dataCleaner_IndigoData.ipynb" formats the date and time of the original Indigo data file into the format that will be suited for our implementation purposes.
+These files are used to clean the data from the excel file obtained from the Indigo website to suit our implementation purposes. "fileRefiner.ipynb" particularly removes the flight legs that do not have both incoming and outgoing connections. "dataCleaner_IndigoData.ipynb" formats the date and time of the original Indigo data file into the format that will be suited for our implementation purposes.
 
 **stringVisualizer.ipynb**
 
-The file "stringVisualizer.ipynb" is used to create Gantt Chart like visualisations of the strings. Especially the ones found in Figures 10 and 11 in the paper. In the file all the strings obtained from Test cases 1, 2, 3 and 4 can be found with and without $\xi$ value assignments of the flight legs. 
+The file "stringVisualizer.ipynb" is used to create Gantt Chart like visualisations of the strings (e.g. the ones found in Figures 10 and 11 in the paper). In the file all the strings obtained from Test cases 1, 2, 3 and 4 can be found with and without $\xi$ value assignments of the flight legs. 
  
 The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
 ```
@@ -52,4 +52,4 @@ pip install -r requirements.txt
 Citation is yet to be announced and will be soon updated.
 
 # **Contact**
-For further queries please get in touch primarily at balamurugan.palaniappan@iitb.ac.in or alternatively at dhawalthakkar.199020@gmail.com
+For further queries please get in touch primarily at  dhawalthakkar.199020@gmail.com or alternatively at balamurugan.palaniappan@iitb.ac.in 
