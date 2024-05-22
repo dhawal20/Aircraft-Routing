@@ -19,16 +19,18 @@ We propose an optimization model that strives to minimize propagated delay while
 
 **DP_aircraft_routing.ipnyb**
 
-The file "DP_aircraft_routing.ipnyb" contains the implementation of the DP implementation mentioned in the paper. DP approach is useful for mean delay information
+The file "DP_aircraft_routing.ipnyb" contains the implementation of the DP approach mentioned in the paper. DP approach is useful for mean delay information. Optimization model discussed in Section 4 of the paper is implemented in this approach using pyomo. Discussion of the DP approach can be found in Section 5 and the pseudocodes can be found in the supplementary material of the paper.
 
 **RL_aircraft_routing.ipnyb**
 
-The file "RL_aircraft_routing.ipnyb" contains the implementation of the Reinforcement Learning framework mentioned in the paper.
+The file "RL_aircraft_routing.ipnyb" contains the implementation of the RL Framework approach mentioned in the paper. The objective of RL framework is to capture the uncertainties in delays the flight legs might face in real life situations. Optimization model discussed in Section 4 of the paper is implemented in this approach using pyomo. Discussion of the RL approach can be found in Section 6 and the pseudocodes can be found in the supplementary material of the paper.
 
 **stringEnumerator.ipynb**
- "stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). "stringEnumerator.ipynb" is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible.
+
+ "stringEnumerator.ipynb" enumerates all the strings possible and then selects the best strings based on the objective (minimization of propagated delays or incorporating importance assignemnts as well). It is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not be computationally feasible. Optimization model discussed in Section 4 is implemented to achieve the objective.
 
  **dataGenerationDelays.ipynb**
+ 
  Other files are for data cleaning purposes which can be based on requirements or you may need to write different codes for file cleaning based on the data format of the original file. The requirements list can be seen in the file named "requirements.txt". To install the required dependencies, run the following command:
 ```
 pip install -r requirements.txt
