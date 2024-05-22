@@ -14,7 +14,7 @@ All the codes are written in a Python notebook. The packages requirements are mi
 
 **Data Folder**
 
-Data Folder contains the excel files for the input data. In the paper we have primarily talked about Test Case 1, 2, 3, 4 and Indigo_Fleet test cases. Other data files which are a subset of the Indigo_Fleet data file can also be found and used for experiment purposes.
+Data Folder contains the excel files for the input data. In the paper we have talked about Test Case 1, 2, 3, 4 and Indigo_Fleet test cases which are present in this folder.
 
 We propose an optimization model that strives to minimize propagated delay while prioritizing flights based on customer feedback, thus resulting in customer-aware routes. To solve the proposed optimization model, we design an iterative alternating optimization scheme where feasible strings are first constructed from the pool of available flight legs using a string generation procedure, followed by solving an integer linear optimization problem over only the feasible set of strings obtained in the first stage. To construct feasible strings of flights at each iteration, we use two different methods. Dynamic Programming (DP) and Reinforcement Learning (RL) approach.
 
