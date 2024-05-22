@@ -10,7 +10,7 @@ We introduce a novel approach to aircraft routing problem, by infusing tradition
 
 # **About Code**
 
-All the codes are written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. Psuedo codes for the implementation can be found in the supplementary material of the paper; link https://ars.els-cdn.com/content/image/1-s2.0-S2941198X24000290-mmc1.pdf.
+All the codes are written in a Python notebook. The packages requirements are minimal and majorly standard packages are only used. Psuedo codes for the implementation can be found in the supplementary material of the paper.
 
 **Data Folder**
 Folder Data contains all the data set required to test the models.
