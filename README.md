@@ -30,9 +30,9 @@ The file "RL_aircraft_routing.ipnyb" contains the implementation of the RL Frame
 
 "stringEnumerator.ipynb" enumerates all possible flight sequence strings, which are then used for selection based on the objective (minimization of propagated delays with the option of incorporating importance assignments as well). It is primarily designed for smaller test cases (Test Case1,2,3,4 whose excel files can be found in Data Folder) as enumerating for large scale data is not computationally feasible. Optimization model discussed in Section 4 is implemented to achieve the objective.
 
- **dataGenerationDelays.ipynb**
+ **dataGenerationDelays.ipynb, dataGenerationDelays_Cluster3.ipynb, dataGenerationDelays_Cluster7.ipynb, dataGenerationDelays_Cluster9.ipynb**
 
-The file dataGenerationDelays.ipynb is used to generate delays which is used in the DP approach and the distribution defined for the flight legs belonging to each cluster is then used in RL approach to capture the uncertainties in delay. Detailed discussion on the delay generation scheme can be found in Section 7.2.2 of the paper.
+Thes files are used to generate delays which is used in the DP approach and the distribution defined for the flight legs belonging to each cluster is then used in RL approach to capture the uncertainties in delay. Detailed discussion on the delay generation scheme can be found in Section 7.2.2 of the paper. "dataGenerationDelays_Cluster3.ipynb", "dataGenerationDelays.ipynb", "dataGenerationDelays_Cluster7.ipynb" and "dataGenerationDelays_Cluster9.ipynb" are the used to generate delays when the clusters are 3, 5, 7 and 9 respectively.
 
 **fileRefiner.ipynb, dataCleaner_IndigoData.ipynb**
 
