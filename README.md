@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 
 # **Citation**
-
+```
 @article{thakkar2024aircraft,
   title={Aircraft routing using dynamic programming and reinforcement learning: A customer-centric approach},
   author={Thakkar, Dhawal and Palaniappan, Balamurugan},
@@ -58,6 +58,6 @@ pip install -r requirements.txt
   year={2024},
   publisher={Elsevier}
 }
-
+```
 # **Contact**
 For further queries please get in touch primarily at  dhawalthakkar.199020@gmail.com or alternatively at balamurugan.palaniappan@iitb.ac.in 
