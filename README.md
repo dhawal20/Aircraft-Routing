@@ -54,7 +54,6 @@ pip install -r requirements.txt
   author={Thakkar, Dhawal and Palaniappan, Balamurugan},
   journal={Journal of the Air Transport Research Society},
   volume={2},
-  pages={100018},
   year={2024},
   publisher={Elsevier}
 }
